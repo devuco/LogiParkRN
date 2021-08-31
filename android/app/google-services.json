@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "630444689179",
+    "firebase_url": "https://logipark-df4b5-default-rtdb.firebaseio.com",
+    "project_id": "logipark-df4b5",
+    "storage_bucket": "logipark-df4b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630444689179:android:79ee5ef21ba73f372235be",
+        "android_client_info": {
+          "package_name": "com.devco.logipark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630444689179-9kpdbe2ovvim0g9i8rqmf14imq53g3be.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devco.logipark",
+            "certificate_hash": "b6845f62d168c822e66a460653f1b0cc641967ea"
+          }
+        },
+        {
+          "client_id": "630444689179-m4jbqseo41a126tur8p0mp124n2b0nfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_sDNBAifqb6S_KzqHebckUwJIw1-mxXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630444689179-m4jbqseo41a126tur8p0mp124n2b0nfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "630444689179-dkkateacjes63gohfd6n212ehgasvufn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Logipark"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630444689179:android:5ca86ca224a73ed52235be",
+        "android_client_info": {
+          "package_name": "com.logiparkrn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630444689179-m4jbqseo41a126tur8p0mp124n2b0nfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_sDNBAifqb6S_KzqHebckUwJIw1-mxXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630444689179-m4jbqseo41a126tur8p0mp124n2b0nfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "630444689179-dkkateacjes63gohfd6n212ehgasvufn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Logipark"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
