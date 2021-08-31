@@ -12,9 +12,14 @@ target 'LogiParkRN' do
     :hermes_enabled => false
   )
 
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+
   target 'LogiParkRNTests' do
     inherit! :complete
     # Pods for testing
+    pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
   end
 
   # Enables Flipper.

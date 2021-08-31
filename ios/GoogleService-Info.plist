@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>630444689179-7e5hk7g7q2915uocteeg33ejsqu6hr2g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.630444689179-7e5hk7g7q2915uocteeg33ejsqu6hr2g</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>630444689179-9kpdbe2ovvim0g9i8rqmf14imq53g3be.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCbPwfstUJst4bVM5yludx2UQCi_SIu0IY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>630444689179</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.LogiParkRN</string>
+	<key>PROJECT_ID</key>
+	<string>logipark-df4b5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>logipark-df4b5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:630444689179:ios:eebf4930c93a646a2235be</string>
+	<key>DATABASE_URL</key>
+	<string>https://logipark-df4b5-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
