@@ -13,8 +13,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		247DEF81C84B5B490089BCCC /* libPods-LogiParkRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9FF46210BB32A80443963B /* libPods-LogiParkRN.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C447838526DE405500B35180 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C447838426DE405500B35180 /* GoogleService-Info.plist */; };
-		C447838626DE405500B35180 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C447838426DE405500B35180 /* GoogleService-Info.plist */; };
+		C40F3C3B26DF4D90008FB8AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C40F3C3A26DF4D90008FB8AF /* GoogleService-Info.plist */; };
+		C40F3C3C26DF4D90008FB8AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C40F3C3A26DF4D90008FB8AF /* GoogleService-Info.plist */; };
 		FD2112A19A857C3BA0560907 /* libPods-LogiParkRN-LogiParkRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8F407EDB9567061705819 /* libPods-LogiParkRN-LogiParkRNTests.a */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LogiParkRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A997670C996F7E43FC1B39EE /* Pods-LogiParkRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogiParkRN.release.xcconfig"; path = "Target Support Files/Pods-LogiParkRN/Pods-LogiParkRN.release.xcconfig"; sourceTree = "<group>"; };
 		C27103C45CC70290DF70B1AE /* Pods-LogiParkRN-LogiParkRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogiParkRN-LogiParkRNTests.debug.xcconfig"; path = "Target Support Files/Pods-LogiParkRN-LogiParkRNTests/Pods-LogiParkRN-LogiParkRNTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C447838426DE405500B35180 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C40F3C3A26DF4D90008FB8AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB570BBDEC297E070695DD45 /* Pods-LogiParkRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogiParkRN.debug.xcconfig"; path = "Target Support Files/Pods-LogiParkRN/Pods-LogiParkRN.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FCC8F407EDB9567061705819 /* libPods-LogiParkRN-LogiParkRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LogiParkRN-LogiParkRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +89,7 @@
 		13B07FAE1A68108700A75B9A /* LogiParkRN */ = {
 			isa = PBXGroup;
 			children = (
-				C447838426DE405500B35180 /* GoogleService-Info.plist */,
+				C40F3C3A26DF4D90008FB8AF /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -240,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C447838626DE405500B35180 /* GoogleService-Info.plist in Resources */,
+				C40F3C3C26DF4D90008FB8AF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +250,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				C447838526DE405500B35180 /* GoogleService-Info.plist in Resources */,
+				C40F3C3B26DF4D90008FB8AF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
