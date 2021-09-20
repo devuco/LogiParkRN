@@ -86,6 +86,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		06FE53E546BB4EEE8A8FE6CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* LogiParkRN */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +133,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C57ABFE23D760F020F4DA39F /* Pods */,
+				06FE53E546BB4EEE8A8FE6CE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -338,7 +346,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = "[CP-User] [RNFB] Core Configuration";
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,7 +22,7 @@ export default Login = ({navigation}) => {
     // Sign-in the user with the credential
     return auth()
       .signInWithCredential(googleCredential)
-      .then(navigation.replace('Home'));
+      .then(navigation.replace('Tabs'));
   };
   return (
     <View style={{flex: 1}}>

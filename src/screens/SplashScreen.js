@@ -11,7 +11,7 @@ export default SplashScreen = ({navigation}) => {
   const getCurrentUser = () => {
     setTimeout(async () => {
       const currentUser = await GoogleSignin.getCurrentUser();
-      if (currentUser) navigation.replace('Home');
+      if (currentUser) navigation.replace('Tabs');
       else navigation.replace('Login');
     }, 500);
   };

@@ -8,29 +8,31 @@ import {
   StyleSheet,
   StatusBar,
 } from 'react-native';
+import {SliderBox} from 'react-native-image-slider-box';
 import database from '@react-native-firebase/database';
 import {WarehouseCard} from '../components';
 
 export default Home = ({navigation}) => {
-  const reference = database().ref('Warehouses');
   GoogleSignin.configure();
   const [data, setData] = useState([]);
+  const [banners, setBanners] = useState([]);
 
   useEffect(() => {
-    console.log('log');
     database()
       .ref('Warehouses')
       .on('value', snapshot => {
-        console.log('log2');
         setData(Object.values(snapshot.val()));
-        console.log(snapshot.val());
+      });
+    database()
+      .ref('Banners')
+      .on('value', snapshot => {
+        setBanners(Object.values(snapshot.val()));
       });
   }, []);
 
   const signOut = async () => {
     try {
       await GoogleSignin.signOut();
-      console.log('Signed out');
       navigation.replace('Login');
     } catch (error) {
       console.error(error);
@@ -39,6 +41,7 @@ export default Home = ({navigation}) => {
 
   return (
     <View>
+      <SliderBox images={banners} autoplay circleLoop />
       <Text style={styles.heading}>Top picks for you</Text>
       <FlatList
         horizontal
