@@ -1,20 +1,25 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {COLORS} from '../colors/colors';
 
-const WarehouseCard = ({item}) => {
+const WarehouseCard = ({item, navigation}) => {
+  const _onPress = () => {
+    navigation.navigate('Details', {uid: item});
+  };
+
   return (
-    <View style={styles.parent}>
+    <TouchableOpacity onPress={_onPress} style={styles.parent}>
       <Image style={styles.image} source={{uri: item.image[0]}} />
       <Text style={styles.heading}>{item.name}</Text>
       <Text style={styles.subHeading}>{item.address}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   parent: {
     margin: 10,
-    backgroundColor: 'goldenrod',
+    backgroundColor: COLORS.PRIMARY,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,

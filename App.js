@@ -1,21 +1,35 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {Home, Login, SplashScreen} from './src/screens';
+import {Details, Home, Login, SplashScreen} from './src/screens';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {COLORS} from './src/colors/colors';
 
 export default App = () => {
   const LoginStack = createNativeStackNavigator();
   const BottomTabNavigator = createBottomTabNavigator();
+  const HomeNavigator = createNativeStackNavigator();
+
+  const HomeStack = () => {
+    return (
+      <HomeNavigator.Navigator
+        screenOptions={{
+          headerStyle: {backgroundColor: COLORS.PRIMARY},
+        }}>
+        <HomeNavigator.Screen name="Home" component={Home} />
+        <HomeNavigator.Screen name="Details" component={Details} />
+      </HomeNavigator.Navigator>
+    );
+  };
 
   const BottomTabs = () => {
     return (
-      <BottomTabNavigator.Navigator>
+      <BottomTabNavigator.Navigator screenOptions={{headerShown: false}}>
         <BottomTabNavigator.Screen
-          name="Home"
-          component={Home}
+          name="HomeStack"
+          component={HomeStack}
           options={{
-            headerStyle: {backgroundColor: 'goldenrod'},
+            headerShown: false,
           }}
         />
       </BottomTabNavigator.Navigator>

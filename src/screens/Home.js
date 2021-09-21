@@ -11,6 +11,7 @@ import {
 import {SliderBox} from 'react-native-image-slider-box';
 import database from '@react-native-firebase/database';
 import {WarehouseCard} from '../components';
+import {COLORS} from '../colors/colors';
 
 export default Home = ({navigation}) => {
   GoogleSignin.configure();
@@ -41,12 +42,14 @@ export default Home = ({navigation}) => {
 
   return (
     <View>
-      <SliderBox images={banners} autoplay circleLoop />
+      <SliderBox images={banners} autoplay circleLoop disableOnPress />
       <Text style={styles.heading}>Top picks for you</Text>
       <FlatList
         horizontal
         data={data}
-        renderItem={({item}) => <WarehouseCard item={item} />}
+        renderItem={({item}) => (
+          <WarehouseCard item={item} navigation={navigation} />
+        )}
         keyExtractor={(item, index) => index}
       />
       <Button title="Signout" onPress={signOut}></Button>
@@ -56,7 +59,7 @@ export default Home = ({navigation}) => {
 
 const styles = StyleSheet.create({
   heading: {
-    color: 'goldenrod',
+    color: COLORS.PRIMARY,
     marginHorizontal: 10,
     marginTop: 10,
     fontWeight: 'bold',
