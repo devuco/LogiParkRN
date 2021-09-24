@@ -12,7 +12,6 @@ const Details = ({route}) => {
     </View>
   );
 };
-export default Details;
 
 const styles = StyleSheet.create({
   parent: {},
@@ -29,3 +28,5 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
+
+export default Details;

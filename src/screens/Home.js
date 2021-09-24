@@ -1,7 +1,7 @@
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import React, {useEffect, useState} from 'react';
 import {
-  View,
+  ScrollView,
   Button,
   Text,
   FlatList,
@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {SliderBox} from 'react-native-image-slider-box';
 import database from '@react-native-firebase/database';
+import auth from '@react-native-firebase/auth';
 import {WarehouseCard} from '../components';
 import {COLORS} from '../colors/colors';
 
@@ -32,16 +33,13 @@ export default Home = ({navigation}) => {
   }, []);
 
   const signOut = async () => {
-    try {
-      await GoogleSignin.signOut();
-      navigation.replace('Login');
-    } catch (error) {
-      console.error(error);
-    }
+    await auth()
+      .signOut()
+      .then(await GoogleSignin.signOut().then(navigation.replace('Login')));
   };
 
   return (
-    <View>
+    <ScrollView>
       <SliderBox images={banners} autoplay circleLoop disableOnPress />
       <Text style={styles.heading}>Top picks for you</Text>
       <FlatList
@@ -53,7 +51,7 @@ export default Home = ({navigation}) => {
         keyExtractor={(item, index) => index}
       />
       <Button title="Signout" onPress={signOut}></Button>
-    </View>
+    </ScrollView>
   );
 };
 
