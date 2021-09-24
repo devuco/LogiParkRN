@@ -1,4 +1,3 @@
-import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import React, {useEffect, useState} from 'react';
 import {
   ScrollView,
@@ -10,12 +9,10 @@ import {
 } from 'react-native';
 import {SliderBox} from 'react-native-image-slider-box';
 import database from '@react-native-firebase/database';
-import auth from '@react-native-firebase/auth';
 import {WarehouseCard} from '../components';
 import {COLORS} from '../colors/colors';
 
 export default Home = ({navigation}) => {
-  GoogleSignin.configure();
   const [data, setData] = useState([]);
   const [banners, setBanners] = useState([]);
 
@@ -32,12 +29,6 @@ export default Home = ({navigation}) => {
       });
   }, []);
 
-  const signOut = async () => {
-    await auth()
-      .signOut()
-      .then(await GoogleSignin.signOut().then(navigation.replace('Login')));
-  };
-
   return (
     <ScrollView>
       <SliderBox images={banners} autoplay circleLoop disableOnPress />
@@ -50,7 +41,6 @@ export default Home = ({navigation}) => {
         )}
         keyExtractor={(item, index) => index}
       />
-      <Button title="Signout" onPress={signOut}></Button>
     </ScrollView>
   );
 };

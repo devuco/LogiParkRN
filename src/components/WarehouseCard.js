@@ -18,11 +18,12 @@ const WarehouseCard = ({item, navigation}) => {
 
 const styles = StyleSheet.create({
   parent: {
+    elevation: 20,
     margin: 10,
     backgroundColor: COLORS.PRIMARY,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
     overflow: 'hidden',
   },
   image: {

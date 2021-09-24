@@ -29,7 +29,6 @@ export default App = () => {
           headerStyle: {backgroundColor: COLORS.PRIMARY},
         }}>
         <HomeNavigator.Screen name="Home" component={Home} />
-        <HomeNavigator.Screen name="Details" component={Details} />
       </HomeNavigator.Navigator>
     );
   };
@@ -60,6 +59,14 @@ export default App = () => {
         <LoginStack.Screen name="SplashScreen" component={SplashScreen} />
         <LoginStack.Screen name="Login" component={Login} />
         <LoginStack.Screen name="Tabs" component={BottomTabs} />
+        <HomeNavigator.Screen
+          name="Details"
+          component={Details}
+          options={{
+            headerShown: true,
+            headerStyle: {backgroundColor: COLORS.PRIMARY},
+          }}
+        />
       </LoginStack.Navigator>
     );
   };

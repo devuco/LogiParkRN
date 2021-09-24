@@ -1,3 +1,3 @@
-import WarehouseCard from "./WarehouseCard"
+import WarehouseCard from './WarehouseCard';
 
-export {WarehouseCard}
+export {WarehouseCard};
